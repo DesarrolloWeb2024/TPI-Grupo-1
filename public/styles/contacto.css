@@ -1,8 +1,9 @@
 form {
 	background-color:#c8cacd;
     padding: 20px;
+    border: 1px solid #dd8d8a;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     max-width: 400px;
     width: 100%;
     margin: 20px auto;
@@ -21,20 +22,28 @@ input, textarea {
     border: 1px solid #060606; 
     border-radius: 5px;
     }
+    
 
-    button {
-        width: 40%;
+button {
+        width: 50%;
+        max-width: 200px;
         padding: 10px;
-        background-color: #88878f;
-        border: none;
+        background-color: #8a8796;
+        border: 2px solid #9fa3a7;
         color: white;
-        border-radius: 5px;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
         cursor: pointer;
-        font-size: 16px;
+        transition: background-color 0.3s ease, transform 0.2s;
+        display: inline-block;
+        margin: 0 auto;
     }
 
-    button:hover {
-        background-color: #dd8d8a;
+button:hover {
+        background-color: #dd8d8a; /* Color de hover */
+        transform: scale(1.05);
+        border-color: #dd8d8a;
     }
 
 .form-title {
@@ -46,4 +55,19 @@ input, textarea {
 .form-description {
     color: #393737;
     font-size: 16px;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center; /* centrado horizontal*/
+    align-items: center;
+    padding: 20px;
+}
+
+.map-container iframe {
+display: block;
+margin: auto;
+border: 5px solid #131314;
+border-radius: 15px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
