@@ -54,7 +54,7 @@ app.get('/api/products', (req, res) => {
     },
     { 
       id: 7, 
-      name: 'Pelota de playa grande + pelota inflable Infantil',  
+      name: 'Pelota de playa grande',  
       oldPrice: 9500, 
       price: 7500, 
       urlImg: 'https://i.pinimg.com/736x/60/fe/6f/60fe6f36495f6aada0679790973a909d.jpg' 
