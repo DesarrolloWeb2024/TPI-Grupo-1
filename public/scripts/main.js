@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                         <div class='col-12 bg-white text-center h-100 product-item'>
                                             <div class='row h-100'>
                                                 <div class='col-12 p-0 mb-3'>
-                                                    <a href="#">
+                                                    <a href="https://www.mercadopago.com.ar/">
                                                         <img src="${product.urlImg}" class="img-fluid">
                                                     </a>
                                                 </div>
@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                                     $${product.price}
                                                     </span>
                                                 </div>
+                                                <button class="btn btn-outline-dark add-to-cart" data-name="${product.name}" data-price="${product.price}" data-image="${product.urlImg}" onclick="window.open('https://www.mercadopago.com.ar/', '_blank');"><i class="fas fa-cart-plus me-2"></i>Pagar</button>
                                             </div>
                                         </div>
                                     `;
